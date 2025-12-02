@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #030213;
+  
+  /* Sidebar & UI Colors from Original */
+  --sidebar-width: 16rem;
+  --sidebar-width-mobile: 18rem;
+}
+
+/* Orijinal renk paleti Tailwind default renklerini override etmiyor, 
+   doğrudan class isimleriyle (slate-900, purple-500) kullanılmış.
+   Bu yüzden temel stil ayarlarını buraya alıyoruz. */
+
+@layer base {
+  body {
+    @apply bg-slate-900 text-white min-h-screen;
+  }
+}
+
+/* Custom Animations */
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scrollbar Styling (Opsiyonel ama şık durur) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a; 
+}
+::-webkit-scrollbar-thumb {
+  background: #334155; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569; 
+}
