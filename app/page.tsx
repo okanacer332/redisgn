@@ -26,28 +26,34 @@ export default function Home() {
   }, []);
 
   return (
-    <main 
-      className={`min-h-screen transition-colors duration-700 overflow-x-hidden ${
-        mode === 'design' 
-          ? 'bg-slate-900' 
-          : 'bg-slate-900' // İkisi de slate-900 ancak üzerindeki gradyanlar değişiyor
-      }`}
-    >
+    <div className={`min-h-screen transition-colors duration-700 ${
+      mode === 'design' 
+        ? 'bg-slate-900' 
+        : 'bg-slate-900'
+    }`}>
+      {/* Sticky Header */}
       <Header mode={mode} onToggle={setMode} isScrolled={isScrolled} />
       
+      {/* Hero Section */}
       <Hero mode={mode} />
       
+      {/* Services Section */}
       <Services mode={mode} />
       
+      {/* Focus Areas Section */}
       <FocusAreas mode={mode} />
       
+      {/* Portfolio Section */}
       <Portfolio mode={mode} />
       
+      {/* Testimonials Section */}
       <Testimonials mode={mode} />
       
+      {/* CTA Section */}
       <CTA mode={mode} />
       
+      {/* Footer */}
       <Footer mode={mode} />
-    </main>
+    </div>
   );
 }
