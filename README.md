@@ -1,7 +1,7 @@
 
-  # One-Page Organic Plum Website
+  # Law Firm Website Design
 
-  This is a code bundle for One-Page Organic Plum Website. The original project is available at https://www.figma.com/design/xcqBila2jyfmZmw3AEKiPf/One-Page-Organic-Plum-Website.
+  This is a code bundle for Law Firm Website Design. The original project is available at https://www.figma.com/design/bMWe8QBOCK1cKoWd6lihV1/Law-Firm-Website-Design.
 
   ## Running the code
 
